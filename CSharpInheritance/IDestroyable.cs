@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Interface to be implemented by all destroyable objects
+
 namespace CSharpInheritance
 {
     internal interface IDestroyable

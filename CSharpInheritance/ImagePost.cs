@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Inherits from Post
+
 namespace CSharpInheritance
 {
     //ImagePost class inherits from Post class and adds a property (ImageURL) and two constructors

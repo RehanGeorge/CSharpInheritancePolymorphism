@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Linked to Radio and TV
+
 namespace CSharpInheritance
 {
     internal class ElectricalDevice

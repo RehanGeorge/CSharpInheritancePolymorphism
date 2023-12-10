@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Implements IEquatable<Ticket>
+
 namespace CSharpInheritance
 {
     internal class Ticket : IEquatable<Ticket>

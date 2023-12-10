@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Linked to DogShelter
+
 namespace CSharpInheritance
 {
     internal class DogEnumeratorExample

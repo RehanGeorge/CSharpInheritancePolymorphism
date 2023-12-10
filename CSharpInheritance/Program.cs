@@ -84,6 +84,7 @@
             }
             */
 
+            /*
             //A list of type List<int> initialized with some number
             List<int> numbers = new List<int>() { 1, 2, 3, 4, 5 };
             int[] numberArray = new int[] { 1, 7, 1, 3 };
@@ -92,6 +93,44 @@
             CollectionSum(numbers);
             Console.WriteLine("");
             CollectionSum(numberArray);
+            */
+
+            /*
+            CarPoly myCar = new CarPoly(200, "Red");
+            myCar.ShowDetails();
+            myCar.Repair();
+
+            BMWPoly myBMW = new BMWPoly(200, "Blue", "M3");
+            myBMW.ShowDetails();
+            myBMW.Repair();
+
+            AudiPoly myAudi = new AudiPoly(200, "Green", "A4");
+            myAudi.ShowDetails();
+            myAudi.Repair();
+            */
+            
+
+            var cars = new List<CarPoly>
+            {
+                new AudiPoly(200, "Green", "A4"),
+                new BMWPoly(200, "Blue", "M3"),
+            };
+
+            foreach (var car in cars)
+            {
+                car.ShowDetails();
+                car.Repair();
+            }
+
+            M3 myM3 = new M3(200, "Blue", "M3");
+            //myM3.Repair();
+            CarPoly myCarPoly = new CarPoly(200, "Red");
+
+            myM3.SetCarIDInfo(1234, "Rehan George");
+            myM3.GetCarIDInfo();
+            myCarPoly.SetCarIDInfo(1235, "Rehan George");
+            myCarPoly.GetCarIDInfo();
+
         }
 
         static void CollectionSum(IEnumerable<int> anyCollection)

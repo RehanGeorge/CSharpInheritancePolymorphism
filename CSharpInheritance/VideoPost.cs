@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Inherits from Post
+
 namespace CSharpInheritance
 {
     internal class VideoPost : Post

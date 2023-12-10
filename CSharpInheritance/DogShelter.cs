@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Linked to DogEnumeratorExample
+
 namespace CSharpInheritance
 {
     internal class DogShelter : IEnumerable<DogEnumeratorExample>

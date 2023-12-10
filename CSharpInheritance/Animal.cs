@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Animal linked to Dog
+
 namespace CSharpInheritance
 {
     internal class Animal

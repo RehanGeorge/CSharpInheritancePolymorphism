@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Dog inherits from Animal
+
 namespace CSharpInheritance
 {
     internal class Dog : Animal

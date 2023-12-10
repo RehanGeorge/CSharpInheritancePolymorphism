@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Linked to Vehicle and IDestroyable
+
 namespace CSharpInheritance
 {
     internal class Car : Vehicle, IDestroyable

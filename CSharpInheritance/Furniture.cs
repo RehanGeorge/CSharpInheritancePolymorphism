@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Linked to Chair
+
 namespace CSharpInheritance
 {
     internal class Furniture
