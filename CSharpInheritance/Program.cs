@@ -108,8 +108,8 @@
             myAudi.ShowDetails();
             myAudi.Repair();
             */
-            
 
+            /*
             var cars = new List<CarPoly>
             {
                 new AudiPoly(200, "Green", "A4"),
@@ -130,6 +130,89 @@
             myM3.GetCarIDInfo();
             myCarPoly.SetCarIDInfo(1235, "Rehan George");
             myCarPoly.GetCarIDInfo();
+            */
+
+            /*
+            Shape[] shapes = { new Cube(3), new Sphere(5) };
+
+            foreach (Shape shape in shapes)
+            {
+                shape.GetInfo();
+                Console.WriteLine($"{shape.Name}: Volume is {shape.Volume()}");
+
+                Cube iceCube = shape as Cube;
+                if (iceCube == null)
+                {
+                    Console.WriteLine("This shape is not a cube");
+                }
+
+                if (shape is Cube)
+                {
+                    Console.WriteLine("This shape is a cube");
+                }
+
+                object cube1 = new Cube(7);
+                Cube cube2 = (Cube)cube1;
+
+                Console.WriteLine($"{cube2.Name}: Volume is {cube2.Volume()}");
+            }
+            */
+
+            //Read and Write to a file
+            /*
+            string text = System.IO.File.ReadAllText(@"C:\Users\Rehan George\source\repos\CSharpInheritance\ReadFile.txt");
+            Console.WriteLine(text);
+
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Rehan George\source\repos\CSharpInheritance\ReadFile.txt");
+            
+            foreach(string line in lines)
+            {
+                Console.WriteLine($"\t{line}");
+            }
+            */
+
+            /*
+            //Method 1
+            string[] lines = { "First 250", "Second 242", "Third 240" };
+            string[] highScores = { "15", "30", "60" };
+
+            File.WriteAllLines(@"C:\Users\Rehan George\source\repos\CSharpInheritance\ReadFile.txt", highScores);
+
+            //Method 2
+            Console.WriteLine("What is the File Name?");
+            string fileName = Console.ReadLine();
+            Console.WriteLine("What is the score?");
+            string input = Console.ReadLine();
+
+            File.WriteAllText($@"C:\Users\Rehan George\source\repos\CSharpInheritance\{fileName}.txt", input);
+
+            //Method 3
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Rehan George\source\repos\CSharpInheritance\myText.txt"))
+            {
+                foreach (string line in lines)
+                {
+                    if(line.Contains("2"))
+                    {
+                        file.WriteLine(line);
+                    }
+                }
+            }
+
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Rehan George\source\repos\CSharpInheritance\myText.txt", true))
+            {
+                file.WriteLine("Additional Line");
+            }
+            */
+
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Rehan George\source\repos\CSharpInheritance\input.txt");
+            foreach (string line in lines)
+            {
+                if (line.Contains("split"))
+                {
+                    string[] strings = line.Split(" ");
+                    Console.WriteLine(strings[4]);
+                }
+            }    
 
         }
 
